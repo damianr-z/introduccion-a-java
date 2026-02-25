@@ -1,0 +1,16 @@
+*.pdf
+package*
+*.pages
+
+# macOS metadata
+.DS_Store
+
+# Java compiled files
+*.class
+
+# Eclipse metadata
+.metadata/
+.settings/
+.classpath
+.project
+bin/
