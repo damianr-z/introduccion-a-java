@@ -1,2 +1,2 @@
 #!/bin/zsh
-javac operators-exercises.java -d bin && java -cp bin operators-exercises
+javac operators_exercises.java -d bin && java -cp bin operators_exercises

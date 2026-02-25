@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class operators {
+public class operators_exercises {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,7 +11,8 @@ public class operators {
         // ConditonalEx1(scanner);
         // ConditonalEx2(scanner);
         // ConditonalEx3(scanner);
-        ConditionalEx4(scanner);
+        // ConditionalEx4(scanner);
+        DoWhileEx3(scanner);
         scanner.close();
     }
 
@@ -249,6 +250,34 @@ public class operators {
             }
         }
         return max;
+    }
+    /////////// Do WHile Exercise 3 ---- Completed
+    public static void DoWhileEx3(Scanner scanner) {
+        long sum = 0;
+        int count = 0;
+        
+        do {
+            System.out.print("Enter a number: ");
+            
+            if (!scanner.hasNextLong()) {
+                System.out.println("You must enter a numeric number");
+                scanner.next();
+                continue;
+            }
+            
+            long num = scanner.nextLong();
+            if (num >= 9999) {
+                System.out.println("You must enter a numeric number below 9999");
+                continue;
+            }
+            count++;
+            sum += num;
+
+        } while (sum < 9999 && count < 3);
+        System.out.println("=====================");
+        System.out.println("Final sum: " + sum);
+        System.out.println("Entries: " + count);
+        System.out.println("_____________________");
     }
 
 }
